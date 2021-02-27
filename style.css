@@ -1,0 +1,320 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ /* PERSONALIZACION DEL SCROLLBAR*/
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 5px;
+}
+
+
+/* IMAGEN_FONDO_HEADER*/
+ img {
+   width: 100%;
+   height: 100%;
+ }
+
+
+.header-img {
+  position: absolute;
+  height: 100vh;
+}
+
+
+.header-overlay {
+  height: 100vh;
+  background: hsl(168deg 32% 78% / 40%);
+  opacity: .85;
+}
+
+header nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .menu .brand img {
+   width: 105px;
+   height: 50px;
+   margin-left: 5px;
+   border-radius: 24px;
+   margin-top: 4px;
+}
+
+header nav  .links {
+  display: flex;
+}
+
+header nav  .links a{
+  padding: 16px 32px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 21px;
+}
+
+.title{
+  text-align: center;
+  margin: 70px;
+  font-size: 26px;
+  font-family: 'Archivo Black', sans-serif;
+  color: #000;
+}
+
+.sub-titles {
+  display: flex;
+  justify-content: space-around;
+  font-weight:bolder;
+  font-size: 21px;
+  color: #000;
+}
+
+ .links_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .links_2 a {
+   margin: 60px 30px;
+   color: #000;
+   transition: all 0.25s;
+ }
+
+ .links_2 a:hover {
+  transform: scale(1.4);
+  transition: all 1s;
+ }
+
+
+ /* PERSONALIZACION DE LOS LINKS2*/
+ .fab {
+  font-size: 2rem;
+  border-radius: 50%;
+ }
+ 
+ main {
+  background: linear-gradient(  360deg  , #204969 16.69%, #bbded6 100% );
+  border-top-style: inset;
+ 
+}
+
+.img-perfil {
+  width: 40%;
+  border: solid  13px #0216193b; 
+  float: left;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+
+.yo {
+
+ margin-left: 52%;
+}
+
+.Acerca_de_mi {
+  margin-top: 20%;
+}
+
+.p_Acerca_de_mi {
+  margin-top: 3%;
+}
+
+.truco {
+  clear: left;
+  font-size: 0px;
+}
+ 
+ section {
+   background: linear-gradient( 360deg  , #204969 16.69%, #335C77 100% );
+   clear: left;
+   
+   
+ }
+
+ .servicios  {
+   
+   text-align: center;
+   margin-bottom: 7px;
+ }
+
+ .cards {
+  display: flex; 
+}
+
+ .col-md-3 {
+  width: 330px;
+  height: 330px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  background: #000;
+ }
+ .col-md-3:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+ }
+
+
+ 
+.fas {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #bbded6;
+}
+    
+
+
+.title-columna {
+  margin-top: 20px;
+  color: #bbded6;
+}
+
+.parrafo {
+  margin-top: 20px;
+  color: #bbded6;
+}
+
+footer {
+  text-align: center;
+  padding: 86px;
+  background: linear-gradient( 178deg  , #204969 16.69%, #000 100% );
+  
+}
+
+
+footer h3 {
+  padding-top: 15px;
+  color: #fff;
+}
+
+
+/* La verdad me quedo mal el responsive , pero bueno lo intente... :( */
+
+/* Responsive
+@media (max-width: 400px) {
+  body {
+    color: red;
+  }
+
+  header nav .menu .brand img {
+    margin: 28px;
+}
+
+header nav .links a {
+  margin-right: 7px;
+}
+
+.title {
+  font-size: 24px;
+  
+}
+
+.sub-titles {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bolder;
+  font-size: 21px;
+  color: #000;
+}
+
+.img-perfil {
+  width: 80%;
+  border: solid 13px #0216193b;
+  float: left;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.yo {
+  
+  text-align: center;
+  margin: auto;
+}
+
+.Acerca_de_mi {
+  margin-top: 0%;
+  font-size: 23px;
+}
+
+.p_Acerca_de_mi {
+  margin-top: 5%;
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+
+.servicios {
+  
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: grid;
+  margin-left: 58px;
+}
+
+.fas {
+  margin-top: 20px;
+  font-size: 3rem;
+  color: #bbded6;
+}
+
+.title-columna {
+  margin-top: 20px;
+  color: #bbded6;
+  font-size: 2rem;
+}
+
+.parrafo {
+  margin-top: 20px;
+  color: #bbded6;
+  font-size: 20px;
+}
+
+footer {
+  
+  margin-top: -21px;
+  
+}
+
+footer h3 {
+  padding-top: 15px;
+  color: #fff;
+  font-size: 23px;
+}
+
+}*/
+
+
+
+
+
+  
+
+
+
+ 
